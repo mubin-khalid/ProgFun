@@ -8,6 +8,15 @@ object Main {
                 print(pascal(col, row) + " ")
             println()
         }
+        /*
+        * Test out balance method.
+        */
+        balance("(this is the ) (string) that need (to be) evaluated".toList)
+        balance(":-)".toList)
+        
+        /*
+        * Test countChange method.*/
+        countChange(301,List(5,10,20,50,100,200,500))
     }
     
     /**
