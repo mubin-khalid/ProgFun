@@ -1,2 +1,6 @@
 language: scala
-script: sbt test
+script:
+  - sbt test
+  - sbt clean coverage test coverageReport
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
